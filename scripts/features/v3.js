@@ -39,7 +39,7 @@ module.exports = (add) => {
             if(e.minfo.mod) return;
             
             if(!(e instanceof Turret)) return;
-            e.reloadTime = 0;
+            e.reloadTime = 1;
             e.spread = 0;
             e.inaccuracy = 0;
             e.recoilAmount = 0;
@@ -52,7 +52,7 @@ module.exports = (add) => {
             
             if(!(e instanceof PowerTurret)) return;
             e.chargeTime = 144;
-            e.chargeMaxDelay = 0;
+            e.chargeMaxDelay = 1;
             e.shootType.collidesGround = true;
             e.shootType.collidesAir = true;
             
