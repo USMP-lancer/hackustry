@@ -39,7 +39,7 @@ module.exports = (add) => {
             if(e.minfo.mod) return;
             
             if(!(e instanceof Turret)) return;
-            e.reloadTime = 1;
+            e.reloadTime = 0.1;
             e.spread = 0;
             e.inaccuracy = 0;
             e.recoilAmount = 0;
