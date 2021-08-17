@@ -46,13 +46,13 @@ module.exports = (add) => {
             e.restitution = 0;
             e.xRand = 0;
             e.cooldown = 10;
-            e.rotateSpeed = 2147483647;
+            e.rotateSpeed = 2147483646;
             e.targetGround = true;
             e.targetAir = true;
             
             if(!(e instanceof PowerTurret)) return;
             e.chargeTime = 144;
-            e.chargeMaxDelay = 1;
+            e.chargeMaxDelay = 0;
             e.shootType.collidesGround = true;
             e.shootType.collidesAir = true;
             
